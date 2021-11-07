@@ -3,7 +3,6 @@ const redis = require("redis");
 
 const app = express();
 const client = redis.createClient();
-// initialise num of visits to 0
 client.set("visits", 0);
 
 app.get("/", (req, res) => {
