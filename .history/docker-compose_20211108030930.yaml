@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  redis-server:
+    name: redis-server
+    image: redis:latest
+
+  node-app:
+    name: node-app
+    build: .
+    ports:
+      - 4001:8081
