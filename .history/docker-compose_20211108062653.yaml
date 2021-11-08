@@ -1,6 +1,6 @@
 version: "3"
 services:
-  redis-server:
+  redis:
     container_name: redis-container
     image: "redis"
   node-app:
